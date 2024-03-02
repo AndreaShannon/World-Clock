@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 24px;
-  padding: 10px;
+  padding-bottom: 10px;
   margin: 24px;
 }
 
@@ -26,7 +26,8 @@ body {
 }
 
 .date {
-  font-size: 18px;
+  padding-top: 5px;
+  font-size: 15px;
   opacity: 0.8;
 }
 
