@@ -23,6 +23,18 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  //Tokyo//
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDate = tokyoElement.querySelector(".date");
+    let tokyoTime = tokyoElement.querySelector(".time");
+    let tokyoCurrentTime = moment().tz("Asia/Tokyo");
+
+    tokyoDate.innerHTML = tokyoCurrentTime.format("MMMM Do YYYY");
+    tokyoTime.innerHTML = tokyoCurrentTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
